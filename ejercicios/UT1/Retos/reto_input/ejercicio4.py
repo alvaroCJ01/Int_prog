@@ -1,3 +1,4 @@
+#Pide un número. Muestra su doble y su triple en frases diferentes.
 num1 = int(input("Introduce un numero: "))
 
 doble= num1*2

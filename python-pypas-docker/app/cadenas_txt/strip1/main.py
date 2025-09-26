@@ -1,9 +1,8 @@
-def run(intcolor: int) -> str:
+def run(text: str) -> str:
     # TODO
-
-    a=hex(intcolor)
-    hexcolor=f'#{a:06X}'
-    return hexcolor
+    final=len(text)-1
+    stext=f'{text[1:final]}'
+    return stext
 
 
 # DO NOT TOUCH THE CODE BELOW

@@ -1,9 +1,7 @@
-def run(intcolor: int) -> str:
+def run(name: str, surname: str) -> str:
     # TODO
-
-    a=hex(intcolor)
-    hexcolor=f'#{a:06X}'
-    return hexcolor
+    fullname= f'{surname}, {name}'
+    return fullname
 
 
 # DO NOT TOUCH THE CODE BELOW

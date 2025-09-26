@@ -1,9 +1,7 @@
-def run(intcolor: int) -> str:
+def run(symbol: str) -> str:
     # TODO
-
-    a=hex(intcolor)
-    hexcolor=f'#{a:06X}'
-    return hexcolor
+    
+    return integral
 
 
 # DO NOT TOUCH THE CODE BELOW

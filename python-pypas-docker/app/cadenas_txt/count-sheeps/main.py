@@ -1,9 +1,8 @@
-def run(intcolor: int) -> str:
+def run(num_sheeps: int) -> str:
     # TODO
-
-    a=hex(intcolor)
-    hexcolor=f'#{a:06X}'
-    return hexcolor
+    sheeps='sheep...'*num_sheeps
+    sleep=f'{sheeps}'
+    return sleep
 
 
 # DO NOT TOUCH THE CODE BELOW
