@@ -1,0 +1,5 @@
+distancia=float(input("Cual es la distancia entre los coches?"))
+v1=float(input("A cuanta velocidad va el coche de delante?: "))
+v2=float(input("A cuanta velocidad va el coche de detrás?: "))
+tiempo=distancia/(abs(v1-v2))
+print(f"Tardarán {tiempo}h en encontrarse")
