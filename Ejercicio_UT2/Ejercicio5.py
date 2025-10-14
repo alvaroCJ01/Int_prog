@@ -1,0 +1,11 @@
+nombre='backup_2025_09_03.tar.gz'
+a=nombre.find("_")
+año=nombre[a+1:a+5]
+nombre2=nombre[a+1:]
+b=nombre2.find("_")
+mes=nombre2[b+1:b+3]
+nombre3=nombre2[b+1:]
+c=nombre3.find("_")
+dia=nombre3[c+1:c+3]
+print(f"{dia}-{mes}-{año}")
+print(nombre.replace("tar.gz","zip"))
