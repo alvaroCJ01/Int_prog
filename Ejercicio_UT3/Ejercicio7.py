@@ -1,4 +1,4 @@
-a=int(input("Introduzca la base: "))
-b=int(input("Introduzca la potencia: "))
+a=float(input("Introduzca la base: "))
+b=float(input("Introduzca la potencia: "))
 
 print(f"{a**b}")
