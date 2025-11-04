@@ -1,8 +1,11 @@
 import sys
 import shutil
 
-if len(sys.argv) != 1:
+if len(sys.argv) == 2:
     uso = int(sys.argv[1])
+else:
+    print("No se ha introducido un parámetro, usando valor por defecto: 85")
+    uso = 85
     a=shutil.disk_usage(path='/').total
     b=shutil.disk_usage(path='/').used
     #Obtener porcentaje de uso del disco
@@ -11,5 +14,3 @@ if len(sys.argv) != 1:
         print("ALERTA")
     else:
         print("OK")
-else:
-    print("Introduzca algún argumento.")

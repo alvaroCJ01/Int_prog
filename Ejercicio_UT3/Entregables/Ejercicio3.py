@@ -1,5 +1,6 @@
 import platform
 
+print(platform.system(),platform.version(), platform.processor())
 if platform.system() == "Windows":
     print ("Winget")
 elif platform.system() == "Linux":
