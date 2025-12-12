@@ -251,4 +251,3 @@ def prineros_primos(num_prim_prim):
         if i % 2:
             print(i)
             contador+=1
-prineros_primos(6)
