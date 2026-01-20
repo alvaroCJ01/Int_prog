@@ -1,8 +1,8 @@
 def mayor(n1,n2):
     if n1 > n2:
-        return n2
-    else:
         return n1
+    else:
+        return n2
     
 def es_par(n):
     if n % 2 == 0:
@@ -125,7 +125,6 @@ def calcula_ganancias_uva(precio_kilo,kilos,tamano,tipo):
     precio_final=precio_kilo+sumar
     total=precio_final*kilos
     return total
-print(calcula_ganancias_uva(10,2,2,'A'))
 
 def costes_viaje(num_alumno):
     if num_alumno >= 100:
@@ -243,11 +242,16 @@ def es_primo(num_primo):
         else:
             print("No es primo")
 
-def prineros_primos(num_prim_prim):
+def primeros_primos(n):
     contador = 0
-    for i in range(100000000000000000000000000000000000000000000000):
-        if contador == num_prim_prim:
-            break
-        if i % 2:
-            print(i)
-            contador+=1
+    numero = 2
+    while contador < n:
+        es_primo = True
+        for i in range(2, int(numero**0.5) + 1):
+            if numero % i == 0:
+                es_primo = False
+                break
+        if es_primo:
+            print(numero)
+            contador += 1
+        numero += 1
